@@ -1,3 +1,5 @@
+SHEET_ID = 'XXXXXXXXXXXXX'
+
 function hubspotApi(apiEndPoint, method, version = 3, payload = null) {
   let url = `https://api.hubapi.com/crm/v${version}/${apiEndPoint}`
   const accessToken = PropertiesService.getScriptProperties().getProperty('hs_access_token')
@@ -47,7 +49,7 @@ function parseDate(txt) {
 
 function dataToSheet(data, sheet_name) {
   // Spreadsheet ID
-  const spreadsheet = SpreadsheetApp.openById('1pk83VeTJ2UoWar0ZCV5yvL9tSfPsMyrxby3lLEfbNNM')
+  const spreadsheet = SpreadsheetApp.openById(SHEET_ID)
   let sheet = spreadsheet.getSheetByName(sheet_name)
 
   if (!sheet) {
