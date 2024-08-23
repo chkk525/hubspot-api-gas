@@ -109,21 +109,6 @@ function getContacts() {
     "hs_analytics_first_url",
     "rsormpg",
     "first_deal_created_date",
-    "moniplat______",
-    "leadsource",
-    "moniplat_lead_created_at",
-    "ap__",
-    "ap___",
-    "ap____",
-    "ap_____",
-    "ap___id",
-    "ap_introtime",
-    "apcompany_id",
-    "apdl__",
-    "apposition",
-    "exclude",
-    "excludereason",
-    "sendtime"
   ]
 
   const datetimeColumns = ["first_conversion_date", "notes_last_updated","first_deal_created_date","hs_sa_first_engagement_date"]
